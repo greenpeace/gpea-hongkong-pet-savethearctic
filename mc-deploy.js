@@ -42,7 +42,7 @@ let buildFolder = path.join(__dirname, "build");
 */
 
 const buildFolder = path.join(__dirname, "build");
-const EndpointURL = "https://cloud.greenhk.greenpeace.org/petition-pp";
+const EndpointURL = "https://cloud.greenhk.greenpeace.org/websign";
 let CampaignId = "7012u000000Ou6wAAC";
 const DonationPageUrl = "https://www.greenpeace.org/eastasia/"; // not used now
 const interests = ["Arctic"]; // Arctic, Climate, Forest, Health, Oceans, Plastics

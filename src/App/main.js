@@ -5,8 +5,6 @@ const shareUrl =
   "https://cloud.greenhk.greenpeace.org/petition-polar-savethearctic";
 const shareFBUrl =
   "https://cloud.greenhk.greenpeace.org/petition-polar-savethearctic";
-const shareLineUrl =
-  "https://cloud.greenhk.greenpeace.org/petition-polar-savethearctic";
 
 const donateUrl =
   "https://supporter.ea.greenpeace.org/hk/s/donate/donation-new?language=zh_HK&campaign=arctic&ref=savethearctic_thankyou_page";
@@ -39,8 +37,7 @@ window.share = () => {
     navigator
       .share({
         title: "阻止破壞北極 今天立即加入全球行動！",
-        text:
-          "全賴有您，守護北極的力量日益強大。我們團結一起，讓守護北極的呼聲，揚得更遠！經過三年不懈的努力、超過700萬人揭露SHELL的野心；九月底，石油公司SHELL終於止步北極！現在，讓我們進一步確保所有石油公司永不復返。",
+        text: "全賴有您，守護北極的力量日益強大。我們團結一起，讓守護北極的呼聲，揚得更遠！經過三年不懈的努力、超過700萬人揭露SHELL的野心；九月底，石油公司SHELL終於止步北極！現在，讓我們進一步確保所有石油公司永不復返。",
         url: shareUrl,
       })
       .catch((error) => console.log("Error sharing:", error));
@@ -196,7 +193,7 @@ var pageInit = function () {
           if (response) {
             if (response.Supporter) {
               // ok, go to next page
-              sendPetitionTracking("2020-savethearctic");
+              sendPetitionTracking("savethearctic");
             }
 
             hideFullPageLoading();
